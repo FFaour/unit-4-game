@@ -1,0 +1,6 @@
+body {
+  background-image: url(../images/ThroneroomBackground.jpg);
+}
+.controls {
+  display: block; margin-left: auto; margin-right: auto;
+}

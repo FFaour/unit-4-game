@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars RPG</title>
+
+  <!-- Link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+   <!-- Link to the Bootstrap library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Link to an sdditional CSS file -->
+  <link rel="stylesheet" href=".\css\style.css">
+
+  <!-- Link to add a favicon to the tab of the game -->
+  <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- Overall Bootstrap grid -->
+  <div class="container">
+
+    <!-- Jumbotron with title -->
+    <div class="jumbotron">
+
+      <h1 class="text-center"><strong>Star Wars RPG</strong></h1>
+      <h2 class="text-center">Choose Your Character</h2>
+      <audio controls autoplay>
+        <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" />
+      </audio>
+    </div> <!-- End Jumbotron -->
+
+    <!-- Contents of the game-->
+    <div class="row">
+
+      <!-- Available characters -->
+      <div class="col-lg-12" id="characters-available">
+        <span class="character-image available-character" id="kenobi-character">
+          <p>Obi-Wan Kenobi</p>
+          <img src="./images/kenobi.jpg" alt="Obi-Wan Kenobi Character" id="kenobi-image" style="width: 200px">
+          <p class="health">120</p>
+        </span>
+
+        <span class="character-image available-character" id="skywalker-character">
+          <p>Luke Skywalker</p>
+          <img src="./images/skywalker.jpg" alt="Luke Skywalker Character" id="skywalker-image" style="width: 200px">
+          <p class="health">100</p>
+        </span>
+
+        <span class="character-image available-character" id="yoda-character">
+          <p>Yoda</p>
+          <img src="./images/Yoda.jpg" alt="Yoda Character" id="yoda-image" style="width: 200px; height: 100px">
+          <p class="health">150</p>
+        </span>
+
+        <span class="character-image available-character" id="qui-gon-character">
+          <p>Qui-Gon Jin</p>
+          <img src="./images/QuiGon.jpeg" alt="Qui-Gon Character" id="qui-gon-image" style="width: 200px">
+          <p class="health">180</p>
+        </span>
+
+      </div> <!-- End available characters -->
+
+      <!-- Your chosen character -->
+      <div class="col-lg-12" id="chosen-character">
+        <h2>Your Character</h2>
+      </div> <!-- End your chosen character-->
+
+      <!-- Enemies available to attack -->
+      <div class="col-lg-12" id="enemies-available">
+        <h2>Enemies Available To Attack</h2>
+      </div> <!-- End enemies available to attack -->
+
+      <!-- Fight section -->
+      <div class="col-lg-12" id="fight-section">
+        <h2>Fight Section</h2>
+        <button id="attack">Attack</button>
+      </div> <!-- End fight section -->
+
+      <!-- Defender section -->
+      <div class="col-lg-12" id="defender-section">
+        <h2>Defender</h2>
+      </div> <!-- End defender section -->
+
+      <!-- Game message section -->
+      <div class="col-lg-12" id="message-section">
+        <div id="game-message"></div>
+        <button id="restart">Restart</button>
+      </div> <!-- Game message section -->
+
+    </div> <!-- End contents of the game -->
+
+  </div> <!-- End Bootstrap grid -->
+
+  <script type="text/javascript" src="./javascript/rpgStarWars.js"></script>
+
+</body>
+</html>
