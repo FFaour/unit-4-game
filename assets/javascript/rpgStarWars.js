@@ -5,6 +5,7 @@ $(document).ready(function() {
   // Creates an object with all of the playable characters in the list
 
   var characterSelected;
+  var combatants = [];
 
   var characters = {
     "Kenobi": {
@@ -63,9 +64,19 @@ $(document).ready(function() {
   renderCharacters(characters, "#characters-section");
   // On click event for saving the selected characters name
   $(document).on("click", ".character", function() {
+    console.log("click is working");
   // save the clicked characters name 
     var nameClicked = $(this).attr("data-name");
     console.log(nameClicked);
+    // if a character has not been selected
+    if (!characterSelected) {
+      for (var key in characters) {
+        // push them into an array of combatants to fight later
+        if (key !== nameClicked) {
+          combatants.push(characters[key]);
+        }
+      }
+      console.log(combatants);
+    }
   })
-
 });
