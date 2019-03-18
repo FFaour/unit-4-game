@@ -1,6 +1,28 @@
 body {
   background-image: url(../images/ThroneroomBackground.jpg);
+  font-family: 'Righteous', cursive; 
+  color: black;
 }
-.controls {
-  display: block; margin-left: auto; margin-right: auto;
+
+img {
+  border-radius: 5px;
+  height: 150px;
+  width: 200px;
+}
+
+.character {
+  display: inline-block;
+  border-style: solid;
+  border-color: blue;
+  border-width: 3px;
+  cursor: pointer;
+  background-color:lightgrey;
+  text-align: center;
+}
+
+.character-image {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
