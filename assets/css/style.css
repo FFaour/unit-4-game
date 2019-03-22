@@ -1,13 +1,17 @@
 body {
   background-image: url(../images/ThroneroomBackground.jpg);
   font-family: 'Righteous', cursive; 
-  color: black;
+  color: white;
 }
 
 img {
   border-radius: 5px;
   height: 150px;
   width: 200px;
+}
+
+button {
+  color: black;
 }
 
 .character {
@@ -18,6 +22,8 @@ img {
   cursor: pointer;
   background-color:lightgrey;
   text-align: center;
+  color: black;
+  padding-left: 3px;
 }
 
 .character-image {
